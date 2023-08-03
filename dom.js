@@ -6,3 +6,8 @@
 // document.getElementsByID('sample-id')
 // above syntax is a method known as query selecting:- Selecting elements does not require us full knowledge of our DOM Structure
 // We can select our HTML elements in a way that is similar to selecting elements in our CSS files.
+
+
+let anchorElement = document.getElementById('external-link');
+
+anchorElement.href = 'https://www.google.com';
