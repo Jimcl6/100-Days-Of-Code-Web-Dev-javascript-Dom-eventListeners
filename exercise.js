@@ -22,7 +22,10 @@ let mainHeader = document.body.children[0];
 console.log(mainHeader);
 // 2. Use the variable from (1) and get access to the "parent"
 //    element of the stored <h1> element (i.e. to the <body> element)
-console.dir(mainHeader.parentNode);
+// console.dir(mainHeader.parentNode); // <--- this code works but problem is what if the parent node is not an HTML element, this would then return a Document node. Hence, better to use "parentElement".
+// correct answer is:
+console.dir(mainHeader.parentElement);
+
 //    BONUS: Try using the variable from (1) to get access to the
 //    sibling element (i.e. the <p> element next to the <h1> element)
 console.dir(mainHeader.nextSibling);
@@ -36,5 +39,5 @@ let newVariable = document.getElementById("main-header");
 console.dir(mainHeader.nextElementSibling);
 // 5. BONUS TASK: Try changing the text content of the <p> element
 //    you selected in (4) and set it to any other text of your choice
-let changeValue = mainHeader.nextElementSibling;
-changeValue.textContent = "Hello World";
+let changeValue = mainHeader.nextElementSibling.nextElementSibling;
+changeValue.textContent = "Hello Sample";
