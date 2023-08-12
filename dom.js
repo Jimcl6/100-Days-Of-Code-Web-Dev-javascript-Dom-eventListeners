@@ -32,3 +32,14 @@ let firstParagraph = document.querySelector("p");
 firstParagraph.appendChild(newAnchorElement);
 newAnchorElement.textContent = "New Anchor Element.";
 newAnchorElement.href = "https://youtube.com";
+
+// REMOVE / DELETE HTML Elements
+// 1. Select the element that should be removed.
+
+let selectedElement = document.querySelector("a");
+
+// 2. Remove / delete it!
+selectedElement.remove(); // this syntax can be used in modern day browsers.
+
+// another way of removing an element
+selectedElement.parentElement.removeChild(selectedElement); // this syntax can only be used on older browsers.
