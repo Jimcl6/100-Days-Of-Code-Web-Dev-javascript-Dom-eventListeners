@@ -41,5 +41,5 @@ let selectedElement = document.querySelector("a");
 // 2. Remove / delete it!
 selectedElement.remove(); // this syntax can be used in modern day browsers.
 
-// another way of removing an element
-selectedElement.parentElement.removeChild(selectedElement); // this syntax can only be used on older browsers.
+// ANOTHER WAY OF REMOVING AN HTML ELEMENT
+// selectedElement.parentElement.removeChild(selectedElement); // this syntax can only be used on older browsers.
