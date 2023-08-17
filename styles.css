@@ -1,12 +1,40 @@
 * {
   margin: 0;
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #201F1C;
 }
 
 section {
-  display: block;
-  width: 20%;
+  margin: 20px auto;
+  width: 30%;
+  padding: 20px;
+  background-color: #F4F3C7;
+  border-radius: 8px;
 }
 
 #counter {
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 50px;
+}
+
+input {
+  width: 100%;
+  background-color: #FCF4C0;
+  border-width: 1px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+
+.btn-reset {
+  background-color: #C8B031;
+  padding: 10px;
+  width: 30%;
+  border-radius: 5px;
+  border: 0px;
 }

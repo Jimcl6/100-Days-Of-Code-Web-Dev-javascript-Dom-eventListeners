@@ -1,7 +1,5 @@
 let sectionElement = document.getElementById("counter");
 
-sectionElement.style.display = "flex";
-
 let paragraphElement = document.body.firstElementChild;
 let secondParagraphElement = document.getElementById("inputCounter");
 
@@ -19,7 +17,9 @@ function changeText() {
 
 let inputElement = document.querySelector("input");
 let counter = 60;
+let buttonElement = document.querySelector(".btn-reset");
 
+// console.dir(document.querySelector(".btn-reset"));
 // secondParagraphElement.textContent = `${charactersEntered}/${counter} characters entered.`;
 
 function checkUserInput() {
@@ -28,7 +28,7 @@ function checkUserInput() {
 
   let charactersEntered = counter - enteredText.length;
 
-  if (enteredText == "") {
+  if (enteredText == null) {
     charactersEntered = 60;
   }
   secondParagraphElement.textContent = `${charactersEntered}/${counter}`;
