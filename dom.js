@@ -1,7 +1,7 @@
 let sectionElement = document.getElementById("counter");
 
 let paragraphElement = document.body.firstElementChild;
-let secondParagraphElement = document.getElementById("inputCounter");
+let secondParagraphElement = document.getElementById("remaining-chars");
 
 secondParagraphElement.style.margin = "0";
 secondParagraphElement.style.marginLeft = "10px";
@@ -27,10 +27,6 @@ function checkUserInput() {
   let counter = 60;
 
   let charactersEntered = counter - enteredText.length;
-
-  if (enteredText == null) {
-    charactersEntered = 60;
-  }
   secondParagraphElement.textContent = `${charactersEntered}/${counter}`;
 }
 
