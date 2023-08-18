@@ -1,14 +1,13 @@
 let sectionElement = document.getElementById("counter");
-
-let paragraphElement = document.body.firstElementChild;
+// let paragraphElement = document.body.firstElementChild;
 let secondParagraphElement = document.getElementById("inputCounter");
 
 secondParagraphElement.style.margin = "0";
 secondParagraphElement.style.marginLeft = "10px";
 
-function changeText() {
-  paragraphElement.textContent = "Hello World!";
-}
+// function changeText() {
+//   paragraphElement.textContent = "Hello World!";
+// }
 
 // let clickedParagraphElement = paragraphElement.addEventListener(
 //   "click",
